@@ -408,9 +408,24 @@
                          {
                              "data": {
                                  "values": [
-                                     {"year":1989,"title":"Fall of Berlin Wall","desc":"Catalysed democratic transitions across Eastern Europe.","lon":8,"lat":57,"highlight":["2","3"]},
-                                     {"year":1991,"title":"Dissolution of USSR","desc":"Soviet breakup accelerated regime change in many republics.","lon":150,"lat":65,"highlight":["2","3"]},
-                                     {"year":2011,"title":"Arab Spring","desc":"Popular uprisings across North Africa and the Middle East.","lon":20,"lat":30,"highlight":["2"]}
+                                        {"year":1789,"title":"French Revolution","desc":"Overthrow of monarchy; spread of republican and democratic ideals.","lon":2.35,"lat":48.85},
+                                        {"year":1804,"title":"Haitian Independence","desc":"First successful slave revolt; reshaped colonial order in the Americas.","lon":-72.34,"lat":19.0},
+                                        {"year":1848,"title":"Revolutions of 1848","desc":"Widespread liberal and nationalist uprisings across Europe.","lon":13.4,"lat":52.52},
+                                        {"year":1917,"title":"Russian Revolution","desc":"Collapse of the Tsarist regime and rise of the Soviet state.","lon":37.62,"lat":55.76},
+                                        {"year":1945,"title":"End of WWII","desc":"Defeat of Axis powers; occupation and regime reconfiguration across Europe and colonies.","lon":10.0,"lat":50.0},
+                                        {"year":1947,"title":"Indian Independence","desc":"End of British rule; creation of democratic institutions in India.","lon":78.96,"lat":20.59},
+                                        {"year":1949,"title":"Chinese Revolution","desc":"Establishment of the People's Republic of China; major regime change in Asia.","lon":116.40,"lat":39.90},
+                                        {"year":1959,"title":"Cuban Revolution","desc":"Castro's revolution replaces authoritarian rule with a socialist state.","lon":-82.40,"lat":23.13}  ,
+                                        {"year":1960,"title":"Year of Africa","desc":"17 African nations gain independence from colonial powers.","lon":20.0,"lat":0.0},
+                                        {"year":1974,"title":"Carnation Revolution","desc":"Peaceful military coup ends Estado Novo dictatorship in Portugal.","lon":-9.14,"lat":38.72},
+                                        {"year":1979,"title":"Iranian Revolution","desc":"Overthrow of Shah; establishment of Islamic Republic under Khomeini.","lon":51.39,"lat":35.69},
+                                        {"year":1986,"title":"People Power Revolution","desc":"Nonviolent uprising ends Marcos dictatorship in the Philippines.","lon":121.77,"lat":12.88},
+                                        {"year":1989,"title":"Fall of Berlin Wall","desc":"Symbolic end of Cold War; paves way for German reunification.","lon":13.38,"lat":52.52},
+                                        {"year":1991,"title":"Dissolution of USSR","desc":"End of Soviet Union; emergence of independent republics.","lon":37.62,"lat":55.76},
+                                        {"year":2003,"title":"Iraq Invasion","desc":"US-led coalition topples Saddam Hussein's regime.","lon":44.36,"lat":33.31},
+                                        {"year":2011,"title":"Arab Spring","desc":"Series of uprisings leading to regime changes in several Arab countries.","lon":31.24,"lat":30.04},
+                                        {"year":2014,"title":"Ukraine Crisis","desc":"Euromaidan protests lead to government change; annexation of Crimea by Russia.","lon":30.52,"lat":50.45},
+
                                  ]
                              },
                              // show annotation when slider is within ±5 years of the event
@@ -434,10 +449,25 @@
                          // overlay a centered "!" text on top of each triangle marker (black font)
                          {
                              "data": {
+                                
                                  "values": [
-                                     {"year":1989,"lon":8,"lat":57},
-                                     {"year":1991,"lon":150,"lat":65},
-                                     {"year":2011,"lon":20,"lat":30}
+                                     {"year":1789, "title":"French Revolution","desc":"Overthrow of monarchy and rise of republican ideals.","lon":2.35,"lat":48.86},
+                                     {"year":1804, "title":"Haitian Revolution","desc":"Successful slave revolt leads to establishment of Haiti as first black republic.","lon":-72.34,"lat":19.0},
+                                     {"year":1848, "title":"Revolutions of 1848","desc":"Widespread revolutionary wave across Europe advocating democracy.","lon":13.41,"lat":52.52},
+                                     {"year":1917, "title":"Russian Revolution","desc":"Bolshevik uprising leads to establishment of a communist government.","lon":37.62,"lat":55.76},
+                                     {"year":1945, "title":"End of WWII","desc":"Defeat of Axis powers leads to regime changes in Europe and colonies.","lon":10.0,"lat":50.0},
+                                     {"year":1947, "title":"Indian Independence","desc":"End of British colonial rule and establishment of democratic governance.","lon":78.96,"lat":20.59},
+                                     {"year":1949, "title":"Chinese Revolution","desc":"Communist Party takes control; establishment of the People's Republic of China.","lon":104.19,"lat":35.86},
+                                     {"year":1959, "title":"Cuban Revolution","desc":"Fidel Castro overthrows Batista; establishment of socialist state.","lon":-82.40,"lat":23.13},
+                                     {"year":1960, "title":"Year of Africa","desc":"17 African nations gain independence from colonial powers.","lon":20.0,"lat":0.0},
+                                     {"year":1974, "title":"Carnation Revolution","desc":"Peaceful military coup ends dictatorship in Portugal.","lon":-9.14,"lat":38.72},
+                                     {"year":1979, "title":"Iranian Revolution","desc":"Overthrow of Shah; establishment of Islamic Republic.","lon":51.39,"lat":35.69},
+                                     {"year":1986, "title":"People Power Revolution","desc":"Nonviolent uprising ends Marcos dictatorship in the Philippines.","lon":121.77,"lat":12.88},
+                                     {"year":1989, "title":"Fall of Berlin Wall","desc":"Symbolic end of Cold War; paves way for German reunification.","lon":13.38,"lat":52.52},
+                                     {"year":1991, "title":"Dissolution of USSR","desc":"End of Soviet Union; emergence of independent republics.","lon":37.62,"lat":55.76},
+                                     {"year":2003, "title":"Iraq Invasion","desc":"US-led coalition topples Saddam Hussein's regime.","lon":44.36,"lat":33.31},
+                                     {"year":2011, "title":"Arab Spring","desc":"Series of uprisings leading to regime changes in several Arab countries.","lon":31.24,"lat":30.04},
+                                     {"year":2014, "title":"Ukraine Crisis","desc":"Euromaidan protests lead to government change; annexation of Crimea by Russia.","lon":30.52,"lat":50.45}
                                  ]
                              },
                              "transform": [
@@ -549,14 +579,28 @@
                              },
                              "projection": {"type": "naturalEarth1", "scale": 230, "translate": [700, 375]}
                          },
-
+                         
                          // NEW: annotation point layer (visible when year_slider >= event.year)
                          {
                              "data": {
                                  "values": [
-                                     {"year":1989,"title":"Fall of Berlin Wall","desc":"Catalysed democratic transitions across Eastern Europe.","lon":8,"lat":57,"highlight":["2","3"]},
-                                     {"year":1991,"title":"Dissolution of USSR","desc":"Soviet breakup accelerated regime change in many republics.","lon":150,"lat":65,"highlight":["2","3"]},
-                                     {"year":2011,"title":"Arab Spring","desc":"Popular uprisings across North Africa and the Middle East.","lon":20,"lat":30,"highlight":["2"]}
+                                        {"year":1789,"title":"French Revolution","desc":"Overthrow of monarchy; spread of republican and democratic ideals.","lon":2.35,"lat":48.85},
+                                        {"year":1804,"title":"Haitian Independence","desc":"First successful slave revolt; reshaped colonial order in the Americas.","lon":-72.34,"lat":19.0},
+                                        {"year":1848,"title":"Revolutions of 1848","desc":"Widespread liberal and nationalist uprisings across Europe.","lon":13.4,"lat":52.52},
+                                        {"year":1917,"title":"Russian Revolution","desc":"Collapse of the Tsarist regime and rise of the Soviet state.","lon":37.62,"lat":55.76},
+                                        {"year":1945,"title":"End of WWII","desc":"Defeat of Axis powers; occupation and regime reconfiguration across Europe and colonies.","lon":10.0,"lat":50.0},
+                                        {"year":1947,"title":"Indian Independence","desc":"End of British rule; creation of democratic institutions in India.","lon":78.96,"lat":20.59},
+                                        {"year":1949,"title":"Chinese Revolution","desc":"Establishment of the People's Republic of China; major regime change in Asia.","lon":116.40,"lat":39.90},
+                                        {"year":1959,"title":"Cuban Revolution","desc":"Castro's revolution replaces authoritarian rule with a socialist state.","lon":-82.38,"lat":23.11},
+                                        {"year":1960,"title":"Year of Africa","desc":"17 African nations gain independence from colonial powers.","lon":20.0,"lat":0.0},
+                                        {"year":1974,"title":"Carnation Revolution","desc":"Peaceful military coup ends Estado Novo dictatorship in Portugal.","lon":-9.14,"lat":38.72},
+                                        {"year":1979,"title":"Iranian Revolution","desc":"Overthrow of Shah; establishment of Islamic Republic under Khomeini.","lon":51.39,"lat":35.69},
+                                        {"year":1986,"title":"People Power Revolution","desc":"Nonviolent uprising ends Marcos dictatorship in the Philippines.","lon":121.77,"lat":12.88},
+                                        {"year":1989,"title":"Fall of Berlin Wall","desc":"Symbolic end of Cold War; paves way for German reunification.","lon":13.38,"lat":52.52},
+                                        {"year":1991,"title":"Dissolution of USSR","desc":"End of Soviet Union; emergence of independent republics and new regimes.","lon":37.62,"lat":55.76},
+                                        {"year":2003,"title":"Iraq Invasion","desc":"US-led coalition topples Saddam Hussein's regime; begins occupation.","lon":44.37,"lat":33.32},
+                                        {"year":2011,"title":"Arab Spring","desc":"Pro-democracy uprisings across Middle East and North Africa.","lon":20.0,"lat":30.0},
+                                        {"year":2014,"title":"Ukraine Crisis","desc":"Euromaidan protests lead to government change; Russia annexes Crimea.","lon":30.52,"lat":50.45}
                                  ]
                              },
                              // show annotation when slider is within ±5 years of the event
@@ -581,9 +625,23 @@
                          {
                              "data": {
                                  "values": [
-                                     {"year":1989,"lon":8,"lat":57},
-                                     {"year":1991,"lon":150,"lat":65},
-                                     {"year":2011,"lon":20,"lat":30}
+                                     {"year":1789,"lon":2.35,"lat":48.85},
+                                     {"year":1804,"lon":-72.34,"lat":19.0},
+                                     {"year":1848,"lon":13.4,"lat":52.52},
+                                     {"year":1917,"lon":37.62,"lat":55.76},
+                                     {"year":1945,"lon":10.0,"lat":50.0},
+                                     {"year":1947,"lon":78.96,"lat":20.59},
+                                     {"year":1949,"lon":116.40,"lat":39.90},
+                                     {"year":1959,"lon":-82.38,"lat":23.11},
+                                     {"year":1960,"lon":20.0,"lat":0.0},
+                                     {"year":1974,"lon":-9.14,"lat":38.72},
+                                     {"year":1979,"lon":51.39,"lat":35.69},
+                                     {"year":1986,"lon":121.77,"lat":12.88},
+                                     {"year":1989,"lon":13.38,"lat":52.52},
+                                     {"year":1991,"lon":37.62,"lat":55.76},
+                                     {"year":2003,"lon":44.37,"lat":33.32},
+                                     {"year":2011,"lon":20.0,"lat":30.0},
+                                     {"year":2014,"lon":30.52,"lat":50.45},
                                  ]
                              },
                              "transform": [
@@ -618,24 +676,23 @@
 
              // --- NEW: event defs mirrored in JS so we trigger highlights for ±5 years around an event ---
              const EVENT_DEFS = [
-                        { year:1789, title:"French Revolution", desc:"Overthrow of monarchy; spread of republican and liberal ideas.", highlight:['2','3'], lon:2.35, lat:48.85 },
-                        { year:1804, title:"Haitian Independence", desc:"First successful slave revolt; reshaped colonial order in the Americas.", highlight:['2'], lon:-72.34, lat:19.0 },
-                        { year:1848, title:"Revolutions of 1848", desc:"Widespread liberal and nationalist uprisings across Europe.", highlight:['2','3'], lon:13.4, lat:52.52 },
-                        { year:1917, title:"Russian Revolution", desc:"Collapse of the Tsarist regime and rise of the Soviet state.", highlight:['0','1'], lon:37.62, lat:55.76 },
-                        { year:1945, title:"End of WWII", desc:"Defeat of Axis powers; occupation and regime reconfiguration across Europe and colonies.", highlight:['2','3'], lon:10.0, lat:50.0 },
-                        { year:1947, title:"Indian Independence", desc:"End of British rule; creation of democratic institutions in India.", highlight:['2'], lon:78.96, lat:20.59 },
-                        { year:1949, title:"Chinese Revolution", desc:"Establishment of the People's Republic of China; major regime change in Asia.", highlight:['0'], lon:116.40, lat:39.90 },
-                        { year:1959, title:"Cuban Revolution", desc:"Castro's revolution replaces authoritarian rule with a communist state.", highlight:['0'], lon:-82.38, lat:23.11 },
-                        { year:1960, title:"Year of Africa", desc:"Wave of decolonisation as many African states gain independence.", highlight:['0','1','2'], lon:20.0, lat:0.0 },
-                        { year:1974, title:"Carnation Revolution", desc:"Peaceful coup ends Portugal's dictatorship and initiates democratization.", highlight:['2','3'], lon:-9.14, lat:38.72 },
-                        { year:1979, title:"Iranian Revolution", desc:"Overthrow of the Shah and creation of the Islamic Republic.", highlight:['0'], lon:51.39, lat:35.69 },
-                        { year:1986, title:"People Power (Philippines)", desc:"Popular uprising topples Marcos and restores democratic rule.", highlight:['2'], lon:121.77, lat:12.88 },
-                        { year:1989, title:"Fall of Berlin Wall", desc:"Catalysed democratic transitions across Eastern Europe.", highlight:['2','3'], lon:13.38, lat:52.52 },
-                        { year:1991, title:"Dissolution of USSR", desc:"Breakup of the Soviet Union and rapid regime change in former republics.", highlight:['2','3'], lon:37.62, lat:55.76 },
-                        { year:2003, title:"Iraq invasion", desc:"External intervention results in regime overthrow and long-term political reorganisation.", highlight:['2'], lon:44.37, lat:33.32 },
-                        { year:2011, title:"Arab Spring", desc:"Mass uprisings across North Africa and the Middle East, precipitating regime changes.", highlight:['2'], lon:20.0, lat:30.0 },
-                        { year:2014, title:"Euromaidan (Ukraine)", desc:"Pro-European protests lead to government change and geopolitical realignment.", highlight:['2','3'], lon:30.52, lat:50.45 },
-                        { year:2020, title:"Global protest waves", desc:"Broad protests (e.g., pro-democracy, social justice) that reshaped political debates worldwide.", highlight:['2','3'], lon:0.0, lat:20.0 }
+                        { year:1789, title:"French Revolution", desc:"Overthrow of monarchy; spread of republican and liberal ideas.", lon:2.35, lat:48.85 },
+                        { year:1804, title:"Haitian Independence", desc:"First successful slave revolt; reshaped colonial order in the Americas.", lon:-72.34, lat:19.0 },
+                        { year:1848, title:"Revolutions of 1848", desc:"Widespread liberal and nationalist uprisings across Europe.", lon:13.4, lat:52.52 },
+                        { year:1917, title:"Russian Revolution", desc:"Collapse of the Tsarist regime and rise of the Soviet state.", lon:37.62, lat:55.76 },
+                        { year:1945, title:"End of WWII", desc:"Defeat of Axis powers; occupation and regime reconfiguration across Europe and colonies.", lon:10.0, lat:50.0 },
+                        { year:1947, title:"Indian Independence", desc:"End of British rule; creation of democratic institutions in India.", lon:78.96, lat:20.59 },
+                        { year:1949, title:"Chinese Revolution", desc:"Establishment of the People's Republic of China; major regime change in Asia.", lon:116.40, lat:39.90 },
+                        { year:1959, title:"Cuban Revolution", desc:"Castro's revolution replaces authoritarian rule with a communist state.", lon:-82.38, lat:23.11 },
+                        { year:1960, title:"Year of Africa", desc:"Wave of decolonisation as many African states gain independence.", lon:20.0, lat:0.0 },
+                        { year:1974, title:"Carnation Revolution", desc:"Peaceful coup ends Portugal's dictatorship and initiates democratization.", lon:-9.14, lat:38.72 },
+                        { year:1979, title:"Iranian Revolution", desc:"Overthrow of the Shah and creation of the Islamic Republic.", lon:51.39, lat:35.69 },
+                        { year:1986, title:"People Power (Philippines)", desc:"Popular uprising topples Marcos and restores democratic rule.", lon:121.77, lat:12.88 },
+                        { year:1989, title:"Fall of Berlin Wall", desc:"Catalysed democratic transitions across Eastern Europe.", lon:13.38, lat:52.52 },
+                        { year:1991, title:"Dissolution of USSR", desc:"Breakup of the Soviet Union and rapid regime change in former republics.", lon:37.62, lat:55.76 },
+                        { year:2003, title:"Iraq invasion", desc:"External intervention results in regime overthrow and long-term political reorganisation.", lon:44.37, lat:33.32 },
+                        { year:2011, title:"Arab Spring", desc:"Mass uprisings across North Africa and the Middle East, precipitating regime changes.", lon:20.0, lat:30.0 },
+                        { year:2014, title:"Euromaidan (Ukraine)", desc:"Pro-European protests lead to government change and geopolitical realignment.", lon:30.52, lat:50.45 },
                     ];
 
             // compute highlights for any event within ±5 years of the current slider
